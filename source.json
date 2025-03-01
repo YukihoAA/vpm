@@ -14,7 +14,16 @@
     },
     "bannerUrl":"banner.png",
     "githubRepos":[
-        "VRLabs/Avatars-3.0-Manager"
+        "lilxyzw/lilToon",
+        "lilxyzw/lilAvatarUtils",
+        "bdunderscore/modular-avatar",
+        "bdunderscore/ndmf",
+        "Thryrallo/VRC-Avatar-Performance-Tools",
+        "whiteflare/AvatarTools",
+        "nekobako/EditorPatcher"
+        "Narazaka/CheckMissingScripts",
+        "Tliks/GitAutomation",
+        "wholesomevr/SPS-Configurator"
     ],
     "packages":[
     ]
