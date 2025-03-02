@@ -12,11 +12,8 @@
       <div id="listingInfo" class="col mb-4 w-100 align-items-center">
         <div class="bannerImage" style="background-image: url(banner.png)"></div>
         <h1>🍓いちご🥛 VPM Listing</h1>
-        <div class="caption1 mb-2">Collection of Useful VPM Packages</div>
-        <div class="col align-items-center">
-          <fluent-tooltip id="publishedByTooltip" anchor="publishedByText"> yuki@arona.moe </fluent-tooltip>
-          <div class="caption1 mb-2" id="publishedByText">Published by <a href="https://arona.moe" target="_blank">Yuki</a></div>
-        </div>
+        <fluent-tooltip id="publishedByTooltip" anchor="publishedByText"> yuki@arona.moe </fluent-tooltip>
+        <div class="caption1 mb-2" id="publishedByText">Collection of Useful VPM Packages by <a href="https://arona.moe" target="_blank">Yuki</a></div>
       </div>
       <div class="searchBlock">
         <fluent-text-field id="searchInput" placeholder="Search packages..." type="text" autofocus></fluent-text-field>
@@ -84,11 +81,11 @@
         </div>
       </fluent-dialog>
       <fluent-card class="packages">
-        <fluent-data-grid id="packageGrid" role="grid" grid-template-columns="1fr 100px 220px">
+        <fluent-data-grid id="packageGrid" role="grid" grid-template-columns="1fr 100px 160px">
           <fluent-data-grid-row row-type="header">
             <fluent-data-grid-cell cell-type="columnheader" grid-column="1"> Name </fluent-data-grid-cell>
             <fluent-data-grid-cell cell-type="columnheader" grid-column="2"> Type </fluent-data-grid-cell>
-            <fluent-data-grid-cell cell-type="columnheader" grid-column="3"> </fluent-data-grid-cell>
+            <fluent-data-grid-cell cell-type="columnheader" grid-column="3"> VPM Link </fluent-data-grid-cell>
           </fluent-data-grid-row>
           <fluent-data-grid-row data-package-name="Essentials" data-package-id="tools.essentials">
             <fluent-data-grid-cell class="titles" grid-column="1 / span 3">

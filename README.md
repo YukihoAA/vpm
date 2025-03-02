@@ -1,3 +1,3 @@
-# Ichigo Milk VPM Listing
+# 🍓いちご🥛 VPM Listing
 
 Collections of Useful VPM Packages

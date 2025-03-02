@@ -56,6 +56,10 @@ body {
   justify-content: space-between;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
 .justify-content-end {
   justify-content: flex-end;
 }
@@ -363,4 +367,11 @@ h1 {
 
 .flex-1 {
   flex: 1;
+}
+
+fluent-data-grid-row[row-type="header"] {
+  position: sticky; /* 스크롤 시 고정할 수 있도록 설정 */
+  top: 0; /* 화면 상단에 고정 */
+  background-color: var(--neutral-fill-hover); /* 배경색을 정의하여 다른 행과 구분 */
+  z-index: 2; /* 다른 콘텐츠 위에 표시되도록 함 */
 }
