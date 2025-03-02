@@ -32,6 +32,16 @@ body {
   flex-direction: column;
 }
 
+.titles {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(80, 101, 220);
+}
+
+.titlesText {
+  border-bottom: 2px solid #eee;
+}
+
 .content {
   max-width: 1000px;
   width: 100%;
