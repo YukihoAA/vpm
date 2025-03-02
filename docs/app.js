@@ -290,7 +290,6 @@ const setTheme = () => {
 
   const packageInfoName = document.getElementById('packageInfoName');
   const packageInfoId = document.getElementById('packageInfoId');
-  const packageInfoVersion = document.getElementById('packageInfoVersion');
   const packageInfoDescription = document.getElementById('packageInfoDescription');
   const packageInfoAuthor = document.getElementById('packageInfoAuthor');
   const packageInfoDependencies = document.getElementById('packageInfoDependencies');
@@ -314,7 +313,6 @@ const setTheme = () => {
 
       packageInfoName.textContent = packageInfo.displayName;
       packageInfoId.textContent = packageId;
-      packageInfoVersion.textContent = ``;
       packageInfoDescription.textContent = packageInfo.description;
       packageInfoAuthor.textContent = packageInfo.author.name;
       packageInfoAuthor.href = packageInfo.author.url;
