@@ -142,7 +142,7 @@ const PACKAGES = {
     name: "net.raitichan.avatar.bulk-uploader",
     displayName: "Bulk Uploader",
     description: "複数アバターを一括でアップロードします",
-    listUrl: "https://raw.githubusercontent.com/raiti-chan/Bulk-Uploader/master/vpm.json",
+    listUrl: "https://vpm.raitichan.net/vpm.json",
     author: {
       name: "Raitichan",
       url: "https://github.com/raiti-chan/Bulk-Uploader",
@@ -291,6 +291,7 @@ const setTheme = () => {
   const packageInfoName = document.getElementById('packageInfoName');
   const packageInfoId = document.getElementById('packageInfoId');
   const packageInfoDescription = document.getElementById('packageInfoDescription');
+  const packageInfoVccUrlField = document.getElementById('packageInfoVccUrlField');
   const packageInfoAuthor = document.getElementById('packageInfoAuthor');
   const packageInfoDependencies = document.getElementById('packageInfoDependencies');
   const packageInfoKeywords = document.getElementById('packageInfoKeywords');
@@ -298,7 +299,16 @@ const setTheme = () => {
 
   const rowAddToVccButtons = document.querySelectorAll('.rowAddToVccButton');
   rowAddToVccButtons.forEach((button) => {
-    button.addEventListener('click', () => window.location.assign(`vcc://vpm/addRepo?url=${encodeURIComponent(LISTING_URL)}`));
+    button.addEventListener('click', e => {
+      const packageId = e.target.dataset?.packageId;
+      const packageInfo = PACKAGES?.[packageId];
+      if (!packageInfo) {
+        console.error(`Did not find package ${packageId}. Packages available:`, PACKAGES);
+        return;
+      }
+
+      window.location.assign(`vcc://vpm/addRepo?url=${encodeURIComponent(packageInfo.listUrl)}`)
+    });
   });
 
   const rowPackageInfoButton = document.querySelectorAll('.rowPackageInfoButton');
@@ -314,6 +324,8 @@ const setTheme = () => {
       packageInfoName.textContent = packageInfo.displayName;
       packageInfoId.textContent = packageId;
       packageInfoDescription.textContent = packageInfo.description;
+      packageInfoVccUrlField.value = packageInfo.listUrl;
+      vccListingInfoUrlField.value = packageInfo.listUrl;
       packageInfoAuthor.textContent = packageInfo.author.name;
       packageInfoAuthor.href = packageInfo.author.url;
 
