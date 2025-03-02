@@ -1,32 +1,194 @@
 import { baseLayerLuminance, StandardLuminance } from 'https://unpkg.com/@fluentui/web-components';
 
-const LISTING_URL = "{{ listingInfo.Url }}";
+const LISTING_URL = "https://yukihoaa.github.io/vpm/index.json";
 
 const PACKAGES = {
-{{~ for package in packages ~}}
-  "{{ package.Name }}": {
-    name: "{{ package.Name }}",
-    displayName: "{{ if package.DisplayName; package.DisplayName; end; }}",
-    description: "{{ if package.Description; package.Description; end; }}",
-    version: "{{ package.Version }}",
+  "jp.lilxyzw.avatar-utils": {
+    name: "jp.lilxyzw.avatar-utils",
+    displayName: "lilAvatarUtils",
+    description: "Utilities for avatar modification.",
+    version: "2.0.0",
     author: {
-      name: "{{ if package.Author.Name; package.Author.Name; end; }}",
-      url: "{{ if package.Author.Url; package.Author.Url; end; }}",
+      name: "",
+      url: "",
     },
     dependencies: {
-      {{~ for dependency in package.Dependencies ~}}
-        "{{ dependency.Name }}": "{{ dependency.Version }}",
-      {{~ end ~}}
     },
     keywords: [
-      {{~ for keyword in package.Keywords ~}}
-        "{{ keyword }}",
-      {{~ end ~}}
     ],
-    license: "{{ package.License }}",
-    licensesUrl: "{{ package.LicensesUrl }}",
+    license: "MIT",
+    licensesUrl: "",
   },
-{{~ end ~}}
+  "jp.whiteflare.avatartools": {
+    name: "jp.whiteflare.avatartools",
+    displayName: "Flare's Avatar Tools",
+    description: "Flare's Avatar Tools",
+    version: "1.13.0",
+    author: {
+      name: "whiteflare",
+      url: "",
+    },
+    dependencies: {
+        "com.vrchat.avatars": "^3.1.13",
+    },
+    keywords: [
+    ],
+    license: "",
+    licensesUrl: "",
+  },
+  "nadena.dev.modular-avatar": {
+    name: "nadena.dev.modular-avatar",
+    displayName: "Modular Avatar",
+    description: "A suite of tools for assembling your avatar out of reusable components",
+    version: "1.12.0-alpha.0",
+    author: {
+      name: "bd_",
+      url: "https://github.com/bdunderscore/modular-avatar",
+    },
+    dependencies: {
+        "com.vrchat.avatars": ">=3.7.4",
+        "nadena.dev.ndmf": ">=1.7.0-alpha.0 <2.0.0-a",
+    },
+    keywords: [
+    ],
+    license: "",
+    licensesUrl: "",
+  },
+  "jp.lilxyzw.liltoon": {
+    name: "jp.lilxyzw.liltoon",
+    displayName: "lilToon",
+    description: "Feature-rich toon shader.",
+    version: "1.8.5",
+    author: {
+      name: "",
+      url: "",
+    },
+    dependencies: {
+    },
+    keywords: [
+        "Toon",
+        "Shader",
+        "Material",
+    ],
+    license: "MIT",
+    licensesUrl: "",
+  },
+  "nadena.dev.ndmf": {
+    name: "nadena.dev.ndmf",
+    displayName: "Non-Destructive Modular Framework",
+    description: "A framework for building non-destructive plugins for VRChat Avatar 3.0",
+    version: "1.7.0-alpha.0",
+    author: {
+      name: "bd_",
+      url: "https://github.com/bdunderscore/ndmf",
+    },
+    dependencies: {
+    },
+    keywords: [
+    ],
+    license: "",
+    licensesUrl: "",
+  },
+  "de.thryrallo.vrc.avatar-performance-tools": {
+    name: "de.thryrallo.vrc.avatar-performance-tools",
+    displayName: "Thry's Avatar Performance Tools",
+    description: "Calculates and evaluates multiple avatar metrics that are not currently taken into account by VRChat's ranking system. Most prominently, it gives you a breakdown of VRAM usage of different parts of your avatar.",
+    version: "1.3.7",
+    author: {
+      name: "Thryrallo",
+      url: "",
+    },
+    dependencies: {
+    },
+    keywords: [
+    ],
+    license: "",
+    licensesUrl: "",
+  },
+  "net.narazaka.unity.missing-scripts": {
+    name: "net.narazaka.unity.missing-scripts",
+    displayName: "Check Missing Scripts",
+    description: "Find Missing Scripts in the current scene.",
+    version: "1.0.2",
+    author: {
+      name: "Narazaka",
+      url: "https://github.com/Narazaka",
+    },
+    dependencies: {
+    },
+    keywords: [
+    ],
+    license: "Zlib",
+    licensesUrl: "",
+  },
+  "net.nekobako.editor-patcher": {
+    name: "net.nekobako.editor-patcher",
+    displayName: "Editor Patcher",
+    description: "Tools to enhance the Unity Editor",
+    version: "0.14.0",
+    author: {
+      name: "nekobako",
+      url: "https://nekobako.net",
+    },
+    dependencies: {
+        "com.vrchat.base": ">=3.4.2",
+    },
+    keywords: [
+    ],
+    license: "MIT",
+    licensesUrl: "",
+  },
+  "net.fushizen.modular-avatar": {
+    name: "net.fushizen.modular-avatar",
+    displayName: "Modular Avatar",
+    description: "",
+    version: "0.7.1",
+    author: {
+      name: "bd_",
+      url: "https://github.com/bdunderscore/modular-avatar",
+    },
+    dependencies: {
+        "com.vrchat.base": "3.1.9",
+        "com.vrchat.avatars": "3.1.9",
+    },
+    keywords: [
+    ],
+    license: "",
+    licensesUrl: "",
+  },
+  "net.raitichan.avatar.bulk-uploader": {
+    name: "net.raitichan.avatar.bulk-uploader",
+    displayName: "Bulk Uploader",
+    description: "複数アバターを一括でアップロードします",
+    version: "0.2.0-beta.1",
+    author: {
+      name: "Raitichan",
+      url: "https://github.com/raiti-chan",
+    },
+    dependencies: {
+        "com.vrchat.avatars": ">=3.5.0",
+    },
+    keywords: [
+    ],
+    license: "",
+    licensesUrl: "",
+  },
+  "com.aoyon.git-acutomation": {
+    name: "com.aoyon.git-acutomation",
+    displayName: "Git Automation",
+    description: "A tool for git.",
+    version: "0.1.1",
+    author: {
+      name: "Ao_425",
+      url: "https://github.com/Tliks",
+    },
+    dependencies: {
+    },
+    keywords: [
+    ],
+    license: "",
+    licensesUrl: "",
+  },
 };
 
 const setTheme = () => {
