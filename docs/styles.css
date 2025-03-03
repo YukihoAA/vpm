@@ -32,7 +32,7 @@ body {
   background-color: var(--neutral-fill-hover);
   border-radius: 0.5rem;
   margin: 1rem;
-  padding: 0.5rem;
+  padding: 0.5cap;
   display: flex;
   position: fixed;
   top: auto;
@@ -50,9 +50,13 @@ body {
   }
 }
 
+#links a {
+  display: flex;
+  justify-content: center;
+}
+
 .logos {
-  height: 3cap;
-  vertical-align: baseline;
+  width: 3cap;
   margin: 1cap 0.5cap;
 }
 
