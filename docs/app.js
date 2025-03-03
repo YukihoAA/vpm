@@ -62,6 +62,20 @@ const PACKAGES = {
     license: "MIT",
     licensesUrl: "https://raw.githubusercontent.com/bdunderscore/ndmf/main/COPYING.md",
   },
+  "com.poiyomi.toon": {
+    name: "com.poiyomi.toon",
+    displayName: "Poiyomi Toon Shader",
+    description: "Feature-rich shaders for Unity and VRChat.",
+    listUrl: "https://poiyomi.github.io/vpm/index.json",
+    author: {
+      name: "Poiyomi",
+      url: "https://github.com/poiyomi/PoiyomiToonShader",
+    },
+    dependencies: {},
+    keywords: [],
+    license: "MIT",
+    licensesUrl: "https://raw.githubusercontent.com/poiyomi/PoiyomiToonShader/master/LICENSE",
+  },
   "jp.whiteflare.avatartools": {
     name: "jp.whiteflare.avatartools",
     displayName: "Flare's Avatar Tools",
