@@ -73,7 +73,13 @@ body {
 .titles {
   display: flex;
   flex-direction: column;
-  background-color: rgb(80, 101, 220);
+  background-color: rgb(80, 100, 210);
+}
+
+.titlesEx {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(201, 52, 141);
 }
 
 .titlesText {
