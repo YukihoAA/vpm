@@ -11,7 +11,7 @@
           "displayName": "EditorOnly Toggle",
           "version": "1.0.0",
           "unity": "2022.3",
-          "description": "Can Toggle EditorOnly and Active Status on Hierarchy",
+          "description": "Toggle EditorOnly and Active Status on Hierarchy",
           "vpmDependencies": {},
           "author": { "name": "KirutoLab", "email": "kiruto-shop@booth.pm", "url": "https://booth.pm/ko/items/5748769" },
           "repo": "https://github.com/YukihoAA/EditorOnly_Toggle",

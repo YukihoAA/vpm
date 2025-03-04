@@ -3,6 +3,20 @@ import { baseLayerLuminance, StandardLuminance } from "https://unpkg.com/@fluent
 const LISTING_URL = "https://yukihoaa.github.io/vpm/index.json";
 
 const PACKAGES = {
+  "pm.booth.kirutoshop": {
+    name: "pm.booth.kirutoshop",
+    displayName: "EditorOnly Toggle",
+    description: "Toggle EditorOnly and Active Status on Hierarchy",
+    listUrl: "https://yukihoaa.github.io/vpm/index.json",
+    author: {
+      name: "KirutoLab",
+      url: "https://booth.pm/ko/items/5748769",
+    },
+    dependencies: {},
+    keywords: ["Editor", "Hierarchy"],
+    license: "MIT",
+    licensesUrl: "https://github.com/YukihoAA/EditorOnly_Toggle/raw/master/LICENSE",
+  },
   "jp.lilxyzw.liltoon": {
     name: "jp.lilxyzw.liltoon",
     displayName: "lilToon",
