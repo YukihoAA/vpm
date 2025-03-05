@@ -1,13 +1,13 @@
 import { baseLayerLuminance, StandardLuminance } from "https://unpkg.com/@fluentui/web-components";
 
-const LISTING_URL = "https://yukihoaa.github.io/vpm/index.json";
+const LISTING_URL = "https://vpm.arona.moe/index.json";
 
 const PACKAGES = {
   "booth.kirutoshop.editoronly": {
     name: "booth.kirutoshop.editoronly",
     displayName: "EditorOnly Toggle",
     description: "Toggle EditorOnly and Active Status on Hierarchy",
-    listUrl: "https://yukihoaa.github.io/vpm/index.json",
+    listUrl: "https://vpm.arona.moe/index.json",
     author: {
       name: "KirutoLab",
       url: "https://booth.pm/ko/items/5748769",
