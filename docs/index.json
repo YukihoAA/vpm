@@ -1,7 +1,7 @@
 {
   "name": "🍓いちご🥛 VPM Listing",
   "author": "Yuki",
-  "url": "https://yukihoaa.github.io/vpm/index.json",
+  "url": "https://vpm.arona.moe/index.json",
   "id": "moe.arona.vpm",
   "packages": {
     "booth.kirutoshop.editoronly": {
