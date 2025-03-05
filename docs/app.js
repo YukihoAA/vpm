@@ -3,8 +3,8 @@ import { baseLayerLuminance, StandardLuminance } from "https://unpkg.com/@fluent
 const LISTING_URL = "https://yukihoaa.github.io/vpm/index.json";
 
 const PACKAGES = {
-  "pm.booth.kirutoshop": {
-    name: "pm.booth.kirutoshop",
+  "booth.kirutoshop.editoronly": {
+    name: "booth.kirutoshop.editoronly",
     displayName: "EditorOnly Toggle",
     description: "Toggle EditorOnly and Active Status on Hierarchy",
     listUrl: "https://yukihoaa.github.io/vpm/index.json",
