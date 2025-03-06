@@ -6,6 +6,18 @@
   "packages": {
     "booth.kirutoshop.editoronly": {
       "versions": {
+        "1.0.1": {
+          "name": "booth.kirutoshop.editoronly",
+          "displayName": "EditorOnly Toggle",
+          "version": "1.0.1",
+          "unity": "2022.3",
+          "description": "Toggle EditorOnly and Active Status on Hierarchy",
+          "vpmDependencies": {},
+          "author": { "name": "KirutoLab", "email": "kiruto-shop@booth.pm", "url": "https://booth.pm/ko/items/5748769" },
+          "repo": "https://github.com/YukihoAA/EditorOnly_Toggle",
+          "zipSHA256": "9C92E5B9588B5CA84063BAEAA7B6D2335B2C3825C801CA801AB43A958FD4E9D7",
+          "url": "https://github.com/YukihoAA/EditorOnly_Toggle/releases/download/1.0.1/package.zip"
+        },
         "1.0.0": {
           "name": "booth.kirutoshop.editoronly",
           "displayName": "EditorOnly Toggle",
