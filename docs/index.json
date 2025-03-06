@@ -6,29 +6,17 @@
   "packages": {
     "booth.kirutoshop.editoronly": {
       "versions": {
-        "1.0.1": {
+        "1.0.2": {
           "name": "booth.kirutoshop.editoronly",
           "displayName": "EditorOnly Toggle",
-          "version": "1.0.1",
+          "version": "1.0.2",
           "unity": "2022.3",
           "description": "Toggle EditorOnly and Active Status on Hierarchy",
           "vpmDependencies": {},
           "author": { "name": "KirutoLab", "email": "kiruto-shop@booth.pm", "url": "https://booth.pm/ko/items/5748769" },
           "repo": "https://github.com/YukihoAA/EditorOnly_Toggle",
-          "zipSHA256": "9C92E5B9588B5CA84063BAEAA7B6D2335B2C3825C801CA801AB43A958FD4E9D7",
-          "url": "https://github.com/YukihoAA/EditorOnly_Toggle/releases/download/1.0.1/package.zip"
-        },
-        "1.0.0": {
-          "name": "booth.kirutoshop.editoronly",
-          "displayName": "EditorOnly Toggle",
-          "version": "1.0.0",
-          "unity": "2022.3",
-          "description": "Toggle EditorOnly and Active Status on Hierarchy",
-          "vpmDependencies": {},
-          "author": { "name": "KirutoLab", "email": "kiruto-shop@booth.pm", "url": "https://booth.pm/ko/items/5748769" },
-          "repo": "https://github.com/YukihoAA/EditorOnly_Toggle",
-          "zipSHA256": "CF97BB8D72CC01F20F1EF40D2E80024A5CC0F78C22936D58FF29494A22ED2A52",
-          "url": "https://github.com/YukihoAA/EditorOnly_Toggle/releases/download/1.0.0/package.zip"
+          "zipSHA256": "49EE12CEF8014663418C3EAC89716131ED9B920CF88CB2CFECBFE70531BD39A4",
+          "url": "https://github.com/YukihoAA/EditorOnly_Toggle/releases/download/1.0.2/package.zip"
         }
       }
     }
